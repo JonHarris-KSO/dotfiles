@@ -9,13 +9,13 @@ fi
 
 # Activate Powerlevel10k and theme
 source ~/.p10k.zsh
-source $HOMEBREW_LOCATION/share/powerlevel10k/powerlevel10k.zsh-theme
+source homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 
 # -------- ZSH --------
 
-source $HOMEBREW_LOCATION/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOMEBREW_LOCATION/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # -------- ZSH History --------

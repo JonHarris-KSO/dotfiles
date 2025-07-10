@@ -2,7 +2,6 @@
 
 
 # Export hombrew environment variables.
-HOMEBREW_LOCATION="$HOME/homebrew" # created if following README.md
-eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
+eval "$(homebrew/bin/brew shellenv)" # should match README.md
 
 
