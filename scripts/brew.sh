@@ -32,8 +32,9 @@ brew install --cask emacs-app
 
 # ---- Terminal ----
 
-brew install --cask alacritty               # terminal 
-brew install --cask kitty                   # terminal emulator
+brew install lazygit          # git client
+brew install --cask alacritty # terminal 
+brew install --cask kitty     # terminal emulator
 brew install --cask font-meslo-lg-nerd-font # font for terminal
 
 brew install powerlevel10k           # zsh theme
