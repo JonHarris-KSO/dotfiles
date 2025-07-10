@@ -1,4 +1,5 @@
-# See https://mac.install.guide/terminal/zshrc-zprofile for more info
+# NOTE: `source homebrew/...` must match README.md instructions for Homebrew
+
 
 # -------- Powerlevel10k --------
 
