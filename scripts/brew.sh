@@ -7,6 +7,9 @@
 # Note: Inspired by https://github.com/protiumx/.dotfiles/. Call 'brew
 # outdated' to view outdates packages and update via 'brew upgrade <formula>'
 
+# ---- Install Homebrew ----
+# Follow instructions in ~/dotfiles/README.md
+
 # ---- Apps ---- 
 
 brew install --cask bitwarden                 # password manager
@@ -17,6 +20,7 @@ brew install --cask raycast                   # app launcher
 brew install --cask hiddenbar                 # hide menu bar items
 brew install --cask nikitabobko/tap/aerospace # window manager
 brew install --cask karabiner-elements        # keyboard remapping
+brew install leader-key                       # keyboard remapping
 
 # ---- IDE -----
 
