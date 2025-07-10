@@ -33,28 +33,32 @@ brew update --force --quiet
 chmod -R go-w "$(brew --prefix)/share/zsh"
 ```
 
-### Install Git
+### Install and Configure Git
 
 ```
 brew install git
-```
 
-### Configure Git
-
-```
+# Configure user values logged to each commit
 git config --global user.name <user>
 git config --global user.email <user_email>
 ```
 
 ### Generate SSH Key
 
-Github requires an SSH key to push to our remote repos. Here, we generate a key and copy the public key, which should then be added to our github account.
+Github requires an SSH key to push to our remote repos. Here, we generate the SSH key and copy the public key to the clipboard.
 
 ```
-ssh-keygen -t ed25519 -C <user_email> # to generate ssh-key
-eval "$(ssh-agent -s)"                # to get empty password
-ssh-add ~/.ssh/id_rsa                 # to add private key to agent
-pbcopy < ~/.ssh/id_rsa.pub            # to paste public key into Github
+# Generate ssh-key
+ssh-keygen -t ed25519 -C <user_email>
+
+# Start ssh-agent process; adds environment vars to shell
+eval "$(ssh-agent -s)"
+
+# Load key into ssh-agent
+ssh-add ~/.ssh/id_ed25519
+
+# Copy public key to clipboard; must paste in github 
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
 ## Setup Development Environment
