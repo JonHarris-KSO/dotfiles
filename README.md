@@ -12,7 +12,7 @@ My dotfiles to configure a dev environment on a **MacOS** machine. Configuration
 
 Underlying scripts used configure the machine include the following:
 
-- `scripts/brew.sh`: to download `homebrew`; install applications
+- `scripts/brew.sh`: to install dev tools
 - `scripts/osx.sh`: to configure **MacOS** settings
 - `scripts/stow.sh`: to create desired symulinks
 
@@ -28,7 +28,7 @@ It is possible to install `homebrew` without local admin rights (LAR) using the 
 
 ```
 mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/main | tar xz --strip-components 1 -C homebrew
-eval "$(homebrew/bin/brew shellenv)"
+eval "$(~/homebrew/bin/brew shellenv)"
 brew update --force --quiet
 chmod -R go-w "$(brew --prefix)/share/zsh"
 ```
