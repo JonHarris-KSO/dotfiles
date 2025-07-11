@@ -10,17 +10,18 @@
 # ---- Install Homebrew ----
 # Follow instructions in ~/dotfiles/README.md
 
-# ---- Apps ---- 
+# ---- General ---- 
 
-brew install --cask bitwarden                 # password manager
-brew install --cask raycast                   # app launcher
+brew install --cask bitwarden # OS-agnostic password manager
+brew install --cask raycast # smart spotlight replacement
 
 # ---- User Experience ----
 
-brew install --cask hiddenbar                 # hide menu bar items
-brew install --cask nikitabobko/tap/aerospace # window manager
-brew install --cask karabiner-elements        # keyboard remapping
-brew install leader-key                       # keyboard remapping
+brew install --cask hiddenbar          # hide less-useful menu bar items
+brew install --cask ukelele            # create custom keyboard input .bundle
+brew install --cask karabiner-elements # keyboard remapping utility
+brew install leader-key                # vim-like leader key for app launcher
+brew install --cask nikitabobko/tap/aerospace # i3-like window manager
 
 # ---- IDE -----
 
@@ -32,9 +33,10 @@ brew install --cask emacs-app
 
 # ---- Terminal ----
 
-brew install lazygit          # git client
-brew install --cask alacritty # terminal 
-brew install --cask kitty     # terminal emulator
+brew install lazygit # terminal-based git client
+
+brew install --cask alacritty               # terminal 
+brew install --cask kitty                   # terminal emulator
 brew install --cask font-meslo-lg-nerd-font # font for terminal
 
 brew install powerlevel10k           # zsh theme
