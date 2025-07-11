@@ -1,0 +1,18 @@
+# Emacs backup files
+*~
+\#*\#
+
+# Emacs auto-save files
+.#*
+
+# Emacs byte-compiled files
+*.elc
+
+# Emacs dumped/serialized files
+*.eld
+
+# File containing personal information
+\emacs/.emacs.d/personal.el
+
+# Emacs directories
+\emacs/.emacs.d/elpa/
