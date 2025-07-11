@@ -8,6 +8,7 @@
 # Ignore directories
 ^scripts/?$
 ^apple_plists/?$
+^custom_keyboard_bundles/?$
 
 # Ignore system-specific or secret files
 ^\.ssh/?$
