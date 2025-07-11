@@ -35,4 +35,4 @@ bindkey '^[[B' history-search-forward  # down-arrow
 
 # ---- Aliases ----
 
-alias ls="eza --color=always --icons=always --long"
+alias lse="eza --color=always --icons=always --long"
