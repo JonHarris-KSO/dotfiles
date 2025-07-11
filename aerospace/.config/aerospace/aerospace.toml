@@ -94,7 +94,7 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-3 = 'move-node-to-workspace 3.code'
     alt-shift-4 = 'move-node-to-workspace 4.term'
     alt-shift-5 = 'move-node-to-workspace 5.web'
-    alt-shift-6 = 'move-node-to-workspace 6.other'
+    alt-shift-6 = 'move-node-to-workspace 6.playground'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -144,12 +144,12 @@ automatically-unhide-macos-hidden-apps = true
 # left work monitor = 'TODO'
 # right work monitor = 'TODO'
 [workspace-to-monitor-force-assignment]
-    '1.mail  = ['built-in']
+    '1.mail'  = ['built-in']
     '2.teams' = ['built-in']
     '3.code'  = ['P24q', 'built-in']
     '4.term'  = ['P24q', 'built-in']
     '5.web'   = ['P24q', 'built-in']
-    '6.dump'  = ['P24q', 'built-in']       
+    '6.playground'  = ['P24q', 'built-in']       
 
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#on-window-detected-callback
@@ -183,8 +183,8 @@ automatically-unhide-macos-hidden-apps = true
 
 [[on-window-detected]]
     if.app-name-regex-substring = 'bitwarden'
-    run = ['layout floating', 'move-node-to-workspace 6.dump'] 
+    run = ['layout floating', 'move-node-to-workspace 6.playground'] 
 
 [[on-window-detected]]
     if.app-name-regex-substring = 'settings'
-    run = ['layout floating', 'move-node-to-workspace 6.dump'] 
+    run = ['layout floating', 'move-node-to-workspace 6.playground'] 
